@@ -51,8 +51,8 @@ import (
 	"k8s.io/gengo/examples/deepcopy-gen/generators"
 	"k8s.io/klog"
 
-	generatorargs "k8s.io/code-generator/cmd/deepcopy-gen/args"
-	"k8s.io/code-generator/pkg/util"
+	generatorargs "github.com/fernandrone/code-generator/cmd/deepcopy-gen/args"
+	"github.com/fernandrone/code-generator/pkg/util"
 )
 
 func main() {

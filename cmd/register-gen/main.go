@@ -23,9 +23,9 @@ import (
 	"github.com/spf13/pflag"
 	"k8s.io/klog"
 
-	generatorargs "k8s.io/code-generator/cmd/register-gen/args"
-	"k8s.io/code-generator/cmd/register-gen/generators"
-	"k8s.io/code-generator/pkg/util"
+	generatorargs "github.com/fernandrone/code-generator/cmd/register-gen/args"
+	"github.com/fernandrone/code-generator/cmd/register-gen/generators"
+	"github.com/fernandrone/code-generator/pkg/util"
 	"k8s.io/gengo/args"
 )
 

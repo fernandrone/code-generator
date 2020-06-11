@@ -19,10 +19,10 @@ limitations under the License.
 package v1
 
 import (
+	v1 "github.com/fernandrone/code-generator/_examples/MixedCase/apis/example/v1"
+	"github.com/fernandrone/code-generator/_examples/MixedCase/clientset/versioned/scheme"
 	serializer "k8s.io/apimachinery/pkg/runtime/serializer"
 	rest "k8s.io/client-go/rest"
-	v1 "k8s.io/code-generator/_examples/MixedCase/apis/example/v1"
-	"k8s.io/code-generator/_examples/MixedCase/clientset/versioned/scheme"
 )
 
 type ExampleV1Interface interface {

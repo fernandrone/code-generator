@@ -19,8 +19,8 @@ limitations under the License.
 package example
 
 import (
-	v1 "k8s.io/code-generator/_examples/crd/informers/externalversions/example2/v1"
-	internalinterfaces "k8s.io/code-generator/_examples/crd/informers/externalversions/internalinterfaces"
+	v1 "github.com/fernandrone/code-generator/_examples/crd/informers/externalversions/example2/v1"
+	internalinterfaces "github.com/fernandrone/code-generator/_examples/crd/informers/externalversions/internalinterfaces"
 )
 
 // Interface provides access to each of this group's versions.

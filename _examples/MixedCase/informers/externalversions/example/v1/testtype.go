@@ -21,14 +21,14 @@ package v1
 import (
 	time "time"
 
+	examplev1 "github.com/fernandrone/code-generator/_examples/MixedCase/apis/example/v1"
+	versioned "github.com/fernandrone/code-generator/_examples/MixedCase/clientset/versioned"
+	internalinterfaces "github.com/fernandrone/code-generator/_examples/MixedCase/informers/externalversions/internalinterfaces"
+	v1 "github.com/fernandrone/code-generator/_examples/MixedCase/listers/example/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	watch "k8s.io/apimachinery/pkg/watch"
 	cache "k8s.io/client-go/tools/cache"
-	examplev1 "k8s.io/code-generator/_examples/MixedCase/apis/example/v1"
-	versioned "k8s.io/code-generator/_examples/MixedCase/clientset/versioned"
-	internalinterfaces "k8s.io/code-generator/_examples/MixedCase/informers/externalversions/internalinterfaces"
-	v1 "k8s.io/code-generator/_examples/MixedCase/listers/example/v1"
 )
 
 // TestTypeInformer provides access to a shared informer and lister for

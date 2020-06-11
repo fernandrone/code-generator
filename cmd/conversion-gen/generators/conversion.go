@@ -31,7 +31,7 @@ import (
 
 	"k8s.io/klog"
 
-	conversionargs "k8s.io/code-generator/cmd/conversion-gen/args"
+	conversionargs "github.com/fernandrone/code-generator/cmd/conversion-gen/args"
 )
 
 // These are the comment tags that carry parameters for conversion generation.

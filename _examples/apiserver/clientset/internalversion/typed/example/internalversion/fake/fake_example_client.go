@@ -19,9 +19,9 @@ limitations under the License.
 package fake
 
 import (
+	internalversion "github.com/fernandrone/code-generator/_examples/apiserver/clientset/internalversion/typed/example/internalversion"
 	rest "k8s.io/client-go/rest"
 	testing "k8s.io/client-go/testing"
-	internalversion "k8s.io/code-generator/_examples/apiserver/clientset/internalversion/typed/example/internalversion"
 )
 
 type FakeExample struct {

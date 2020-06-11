@@ -59,7 +59,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"k8s.io/code-generator/pkg/util"
+	"github.com/fernandrone/code-generator/pkg/util"
 	"k8s.io/gengo/args"
 	"k8s.io/gengo/examples/import-boss/generators"
 

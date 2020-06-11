@@ -19,11 +19,11 @@ limitations under the License.
 package versioned
 
 import (
+	examplev1 "github.com/fernandrone/code-generator/_examples/apiserver/clientset/versioned/typed/example/v1"
+	secondexamplev1 "github.com/fernandrone/code-generator/_examples/apiserver/clientset/versioned/typed/example2/v1"
 	discovery "k8s.io/client-go/discovery"
 	rest "k8s.io/client-go/rest"
 	flowcontrol "k8s.io/client-go/util/flowcontrol"
-	examplev1 "k8s.io/code-generator/_examples/apiserver/clientset/versioned/typed/example/v1"
-	secondexamplev1 "k8s.io/code-generator/_examples/apiserver/clientset/versioned/typed/example2/v1"
 )
 
 type Interface interface {

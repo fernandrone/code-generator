@@ -23,14 +23,14 @@ import (
 	sync "sync"
 	time "time"
 
+	versioned "github.com/fernandrone/code-generator/_examples/apiserver/clientset/versioned"
+	example "github.com/fernandrone/code-generator/_examples/apiserver/informers/externalversions/example"
+	example2 "github.com/fernandrone/code-generator/_examples/apiserver/informers/externalversions/example2"
+	internalinterfaces "github.com/fernandrone/code-generator/_examples/apiserver/informers/externalversions/internalinterfaces"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
 	cache "k8s.io/client-go/tools/cache"
-	versioned "k8s.io/code-generator/_examples/apiserver/clientset/versioned"
-	example "k8s.io/code-generator/_examples/apiserver/informers/externalversions/example"
-	example2 "k8s.io/code-generator/_examples/apiserver/informers/externalversions/example2"
-	internalinterfaces "k8s.io/code-generator/_examples/apiserver/informers/externalversions/internalinterfaces"
 )
 
 // SharedInformerOption defines the functional option type for SharedInformerFactory.

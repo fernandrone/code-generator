@@ -25,9 +25,9 @@ import (
 	"k8s.io/gengo/args"
 	"k8s.io/klog"
 
-	generatorargs "k8s.io/code-generator/cmd/client-gen/args"
-	"k8s.io/code-generator/cmd/client-gen/generators"
-	"k8s.io/code-generator/pkg/util"
+	generatorargs "github.com/fernandrone/code-generator/cmd/client-gen/args"
+	"github.com/fernandrone/code-generator/cmd/client-gen/generators"
+	"github.com/fernandrone/code-generator/pkg/util"
 )
 
 func main() {

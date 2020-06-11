@@ -24,7 +24,7 @@ import (
 	"sort"
 	"strings"
 
-	"k8s.io/code-generator/cmd/client-gen/types"
+	"github.com/fernandrone/code-generator/cmd/client-gen/types"
 )
 
 type inputBasePathValue struct {

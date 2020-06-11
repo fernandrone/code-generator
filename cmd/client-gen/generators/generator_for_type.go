@@ -25,7 +25,7 @@ import (
 	"k8s.io/gengo/namer"
 	"k8s.io/gengo/types"
 
-	"k8s.io/code-generator/cmd/client-gen/generators/util"
+	"github.com/fernandrone/code-generator/cmd/client-gen/generators/util"
 )
 
 // genClientForType produces a file for each top-level type.
@@ -43,7 +43,9 @@ type genClientForType struct {
 var _ generator.Generator = &genClientForType{}
 
 // Filter ignores all but one type because we're making a single file per type.
-func (g *genClientForType) Filter(c *generator.Context, t *types.Type) bool { return t == g.typeToMatch }
+func (g *genClientForType) Filter(c *generator.Context, t *types.Type) bool {
+	return t == g.typeToMatch
+}
 
 func (g *genClientForType) Namers(c *generator.Context) namer.NameSystems {
 	return namer.NameSystems{

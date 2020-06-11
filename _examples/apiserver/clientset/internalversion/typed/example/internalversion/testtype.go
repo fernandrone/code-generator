@@ -21,12 +21,12 @@ package internalversion
 import (
 	"time"
 
+	example "github.com/fernandrone/code-generator/_examples/apiserver/apis/example"
+	scheme "github.com/fernandrone/code-generator/_examples/apiserver/clientset/internalversion/scheme"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	rest "k8s.io/client-go/rest"
-	example "k8s.io/code-generator/_examples/apiserver/apis/example"
-	scheme "k8s.io/code-generator/_examples/apiserver/clientset/internalversion/scheme"
 )
 
 // TestTypesGetter has a method to return a TestTypeInterface.

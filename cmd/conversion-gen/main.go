@@ -42,9 +42,9 @@ import (
 	"k8s.io/gengo/args"
 	"k8s.io/klog"
 
-	generatorargs "k8s.io/code-generator/cmd/conversion-gen/args"
-	"k8s.io/code-generator/cmd/conversion-gen/generators"
-	"k8s.io/code-generator/pkg/util"
+	generatorargs "github.com/fernandrone/code-generator/cmd/conversion-gen/args"
+	"github.com/fernandrone/code-generator/cmd/conversion-gen/generators"
+	"github.com/fernandrone/code-generator/pkg/util"
 )
 
 func main() {

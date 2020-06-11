@@ -27,7 +27,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"k8s.io/code-generator/pkg/util"
+	"github.com/fernandrone/code-generator/pkg/util"
 	"k8s.io/gengo/args"
 	"k8s.io/gengo/generator"
 	"k8s.io/gengo/namer"

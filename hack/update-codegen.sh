@@ -23,14 +23,14 @@ set -o pipefail
 #   k8s.io/kubernetes. The output-base is needed for the generators to output into the vendor dir
 #   instead of the $GOPATH directly. For normal projects this can be dropped.
 $(dirname ${BASH_SOURCE})/../generate-internal-groups.sh all \
-  k8s.io/code-generator/_examples/apiserver k8s.io/code-generator/_examples/apiserver/apis k8s.io/code-generator/_examples/apiserver/apis \
+  github.com/fernandrone/code-generator/_examples/apiserver github.com/fernandrone/code-generator/_examples/apiserver/apis github.com/fernandrone/code-generator/_examples/apiserver/apis \
   "example:v1 example2:v1" \
   --output-base "$(dirname ${BASH_SOURCE})/../../.."
 $(dirname ${BASH_SOURCE})/../generate-groups.sh all \
-  k8s.io/code-generator/_examples/crd k8s.io/code-generator/_examples/crd/apis \
+  github.com/fernandrone/code-generator/_examples/crd github.com/fernandrone/code-generator/_examples/crd/apis \
   "example:v1 example2:v1" \
   --output-base "$(dirname ${BASH_SOURCE})/../../.."
   $(dirname ${BASH_SOURCE})/../generate-groups.sh all \
-  k8s.io/code-generator/_examples/MixedCase k8s.io/code-generator/_examples/MixedCase/apis \
+  github.com/fernandrone/code-generator/_examples/MixedCase github.com/fernandrone/code-generator/_examples/MixedCase/apis \
   "example:v1" \
   --output-base "$(dirname ${BASH_SOURCE})/../../.."

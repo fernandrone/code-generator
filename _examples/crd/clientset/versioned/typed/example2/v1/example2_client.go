@@ -19,10 +19,10 @@ limitations under the License.
 package v1
 
 import (
+	v1 "github.com/fernandrone/code-generator/_examples/crd/apis/example2/v1"
+	"github.com/fernandrone/code-generator/_examples/crd/clientset/versioned/scheme"
 	serializer "k8s.io/apimachinery/pkg/runtime/serializer"
 	rest "k8s.io/client-go/rest"
-	v1 "k8s.io/code-generator/_examples/crd/apis/example2/v1"
-	"k8s.io/code-generator/_examples/crd/clientset/versioned/scheme"
 )
 
 type SecondExampleV1Interface interface {

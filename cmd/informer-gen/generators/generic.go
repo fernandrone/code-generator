@@ -21,7 +21,7 @@ import (
 	"sort"
 	"strings"
 
-	clientgentypes "k8s.io/code-generator/cmd/client-gen/types"
+	clientgentypes "github.com/fernandrone/code-generator/cmd/client-gen/types"
 	"k8s.io/gengo/generator"
 	"k8s.io/gengo/namer"
 	"k8s.io/gengo/types"
@@ -73,9 +73,11 @@ type group struct {
 
 type groupSort []group
 
-func (g groupSort) Len() int           { return len(g) }
-func (g groupSort) Less(i, j int) bool { return strings.ToLower(g[i].Name) < strings.ToLower(g[j].Name) }
-func (g groupSort) Swap(i, j int)      { g[i], g[j] = g[j], g[i] }
+func (g groupSort) Len() int { return len(g) }
+func (g groupSort) Less(i, j int) bool {
+	return strings.ToLower(g[i].Name) < strings.ToLower(g[j].Name)
+}
+func (g groupSort) Swap(i, j int) { g[i], g[j] = g[j], g[i] }
 
 type version struct {
 	Name      string

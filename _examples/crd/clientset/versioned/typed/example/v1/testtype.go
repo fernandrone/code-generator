@@ -21,12 +21,12 @@ package v1
 import (
 	"time"
 
+	v1 "github.com/fernandrone/code-generator/_examples/crd/apis/example/v1"
+	scheme "github.com/fernandrone/code-generator/_examples/crd/clientset/versioned/scheme"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	rest "k8s.io/client-go/rest"
-	v1 "k8s.io/code-generator/_examples/crd/apis/example/v1"
-	scheme "k8s.io/code-generator/_examples/crd/clientset/versioned/scheme"
 )
 
 // TestTypesGetter has a method to return a TestTypeInterface.

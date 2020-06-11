@@ -21,8 +21,8 @@ package main
 import (
 	goflag "flag"
 
+	"github.com/fernandrone/code-generator/cmd/go-to-protobuf/protobuf"
 	flag "github.com/spf13/pflag"
-	"k8s.io/code-generator/cmd/go-to-protobuf/protobuf"
 )
 
 var g = protobuf.New()

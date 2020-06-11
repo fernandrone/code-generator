@@ -19,12 +19,12 @@ limitations under the License.
 package scheme
 
 import (
+	example "github.com/fernandrone/code-generator/_examples/apiserver/apis/example/install"
+	secondexample "github.com/fernandrone/code-generator/_examples/apiserver/apis/example2/install"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
 	serializer "k8s.io/apimachinery/pkg/runtime/serializer"
-	example "k8s.io/code-generator/_examples/apiserver/apis/example/install"
-	secondexample "k8s.io/code-generator/_examples/apiserver/apis/example2/install"
 )
 
 var Scheme = runtime.NewScheme()
